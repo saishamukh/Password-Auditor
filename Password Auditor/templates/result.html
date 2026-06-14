@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>Password Analysis</h1>
+
+    <p><strong>Password:</strong> {{ password }}</p>
+    <p><strong>Strength:</strong> {{ strength }}</p>
+    <p><strong>Entropy:</strong> {{ entropy }} bits</p>
+    <p><strong>Dictionary Check:</strong> {{ dictionary }}</p>
+
+    <a href="/">Check Another Password</a>
+</div>
+
+</body>
+</html>
